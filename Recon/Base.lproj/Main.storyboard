@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EBf-9s-Wtc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Recon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmL-Pu-9ty" customClass="TypewriterLabel" customModule="GhostTypewriter">
+                                <rect key="frame" x="24" y="68" width="327" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="V16-Of-JOe"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="welcome to recon.">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="SquaresBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMI-lm-QN3" customClass="TypewriterLabel" customModule="GhostTypewriter">
+                                <rect key="frame" x="24" y="122" width="327" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="YbN-dU-EoB"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Use the camera to detect knowN targets.">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="SquaresBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLC-Uc-HGt" customClass="TypewriterLabel" customModule="GhostTypewriter">
+                                <rect key="frame" x="24" y="601" width="138" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="1qg-UX-pU0"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tap to begin">
+                                        <attributes>
+                                            <color key="NSColor" red="0.11764705882352941" green="1" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="SquaresBold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sLC-Uc-HGt" secondAttribute="bottom" constant="24" id="7rA-rk-ezd"/>
+                            <constraint firstItem="rmL-Pu-9ty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="9U3-cg-fRQ"/>
+                            <constraint firstAttribute="trailing" secondItem="OMI-lm-QN3" secondAttribute="trailing" constant="24" id="MUl-JL-u0n"/>
+                            <constraint firstItem="sLC-Uc-HGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="PEA-1S-9uO"/>
+                            <constraint firstItem="OMI-lm-QN3" firstAttribute="top" secondItem="rmL-Pu-9ty" secondAttribute="bottom" constant="33" id="U4D-Gy-Bw7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rmL-Pu-9ty" secondAttribute="trailing" constant="24" id="XXe-MP-mzT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sLC-Uc-HGt" secondAttribute="trailing" constant="24" id="j9z-8q-hks"/>
+                            <constraint firstItem="OMI-lm-QN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="xxb-II-lWd"/>
+                            <constraint firstItem="rmL-Pu-9ty" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="yIL-jn-8cM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kDd-83-g3Q"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="beginLabel" destination="sLC-Uc-HGt" id="7tu-EO-HOV"/>
+                        <outlet property="instructionsLabel" destination="OMI-lm-QN3" id="lTs-uh-bmO"/>
+                        <outlet property="reconLabel" destination="rmL-Pu-9ty" id="cBz-kK-ZSu"/>
+                        <segue destination="Crg-GQ-3f8" kind="show" identifier="ShowCameraSegue" id="VTu-TJ-fqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="LAM-Um-KOs">
+            <objects>
+                <viewController id="Crg-GQ-3f8" customClass="CameraViewController" customModule="Recon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q0S-Ps-srf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9QS-3H-K9h">
+                                <rect key="frame" x="307" y="60" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Tg-1R-Vja"/>
+                                    <constraint firstAttribute="width" constant="44" id="zVr-h3-XSJ"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="FACE">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="15" name="SquaresBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="updateDetectionType" destination="Crg-GQ-3f8" eventType="touchUpInside" id="lKN-Kl-ga0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSF-X7-TDS" customClass="PreviewView" customModule="Recon" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4V-C2-ECi" customClass="IDCardVIew" customModule="Recon" customModuleProvider="target">
+                                <rect key="frame" x="24" y="491" width="327" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dj-e1-bpP" customClass="TypewriterLabel" customModule="GhostTypewriter">
+                                        <rect key="frame" x="24" y="24" width="279" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="SqS-cw-g6q"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="David Hodge">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.11764705882352941" green="1" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="SquaresBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GC2-uh-Tel" customClass="TypewriterLabel" customModule="GhostTypewriter">
+                                        <rect key="frame" x="24" y="81.5" width="279" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="VaG-D5-kt3"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Gender: Male">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="15" name="SquaresBold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpU-3T-5na" customClass="TypewriterLabel" customModule="GhostTypewriter">
+                                        <rect key="frame" x="24" y="60" width="279" height="17.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Age: 22 - 30">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <font key="NSFont" size="15" name="SquaresBold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dpU-3T-5na" firstAttribute="leading" secondItem="g4V-C2-ECi" secondAttribute="leading" constant="24" id="1hz-RP-uYv"/>
+                                    <constraint firstItem="GC2-uh-Tel" firstAttribute="leading" secondItem="g4V-C2-ECi" secondAttribute="leading" constant="24" id="3Iy-34-V7k"/>
+                                    <constraint firstItem="4Dj-e1-bpP" firstAttribute="top" secondItem="g4V-C2-ECi" secondAttribute="top" constant="24" id="9ao-wE-nsV"/>
+                                    <constraint firstAttribute="height" constant="128" id="9rE-48-dZY"/>
+                                    <constraint firstAttribute="trailing" secondItem="dpU-3T-5na" secondAttribute="trailing" constant="24" id="FA2-fv-9iD"/>
+                                    <constraint firstAttribute="trailing" secondItem="GC2-uh-Tel" secondAttribute="trailing" constant="24" id="Jfj-CS-xNV"/>
+                                    <constraint firstItem="dpU-3T-5na" firstAttribute="top" secondItem="4Dj-e1-bpP" secondAttribute="bottom" constant="8" id="NMs-lL-kgO"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Dj-e1-bpP" secondAttribute="trailing" constant="24" id="TlX-Rs-7WI"/>
+                                    <constraint firstItem="4Dj-e1-bpP" firstAttribute="leading" secondItem="g4V-C2-ECi" secondAttribute="leading" constant="24" id="bi0-Jx-r9F"/>
+                                    <constraint firstItem="GC2-uh-Tel" firstAttribute="top" secondItem="dpU-3T-5na" secondAttribute="bottom" constant="4" id="nNX-BD-QgJ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="ageLabel" destination="dpU-3T-5na" id="n4W-u7-UHz"/>
+                                    <outlet property="genderLabel" destination="GC2-uh-Tel" id="eC8-HT-mOW"/>
+                                    <outlet property="nameLabel" destination="4Dj-e1-bpP" id="PhZ-TB-ON2"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9QS-3H-K9h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1vW-dW-x6S" secondAttribute="leading" constant="24" id="8VM-Rj-u5L"/>
+                            <constraint firstItem="1vW-dW-x6S" firstAttribute="trailing" secondItem="9QS-3H-K9h" secondAttribute="trailing" constant="24" id="AK6-Vl-sjW"/>
+                            <constraint firstItem="BSF-X7-TDS" firstAttribute="leading" secondItem="1vW-dW-x6S" secondAttribute="leading" id="Ids-Fm-a9C"/>
+                            <constraint firstItem="1vW-dW-x6S" firstAttribute="bottom" secondItem="g4V-C2-ECi" secondAttribute="bottom" constant="48" id="P1h-8J-38d"/>
+                            <constraint firstItem="1vW-dW-x6S" firstAttribute="bottom" secondItem="BSF-X7-TDS" secondAttribute="bottom" id="ZOg-vL-itq"/>
+                            <constraint firstItem="9QS-3H-K9h" firstAttribute="top" secondItem="1vW-dW-x6S" secondAttribute="top" constant="40" id="iXK-Nz-Qfc"/>
+                            <constraint firstItem="1vW-dW-x6S" firstAttribute="trailing" secondItem="g4V-C2-ECi" secondAttribute="trailing" constant="24" id="qoi-te-Kbx"/>
+                            <constraint firstItem="BSF-X7-TDS" firstAttribute="top" secondItem="1vW-dW-x6S" secondAttribute="top" id="xjD-PU-jSE"/>
+                            <constraint firstItem="1vW-dW-x6S" firstAttribute="trailing" secondItem="BSF-X7-TDS" secondAttribute="trailing" id="yXI-sh-YAT"/>
+                            <constraint firstItem="g4V-C2-ECi" firstAttribute="leading" secondItem="1vW-dW-x6S" secondAttribute="leading" constant="24" id="ze1-tK-1Vh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1vW-dW-x6S"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="faceToggle" destination="9QS-3H-K9h" id="xxc-UD-7Oj"/>
+                        <outlet property="idCardView" destination="g4V-C2-ECi" id="K4O-p2-rNB"/>
+                        <outlet property="previewView" destination="BSF-X7-TDS" id="SCW-dW-AGV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuU-uY-8zx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168.8" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9pi-LZ-Isf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EBf-9s-Wtc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ekU-7J-MG9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="G5I-4O-R02"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75w-30-8g9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="134"/>
+        </scene>
+    </scenes>
+</document>
